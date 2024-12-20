@@ -20,7 +20,7 @@ const App = () => {
     }
 
     if (from === to || !amount) {
-      setOutput(from);
+      setOutput(amount);
       return;
     }
     converter();
