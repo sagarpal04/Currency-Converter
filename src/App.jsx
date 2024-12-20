@@ -57,9 +57,11 @@ const App = () => {
           <option value="INR">INR</option>
         </select>
       </div>
-      <h2 className="ml-2">
-        Output: {output !== null ? `${output} ${to}` : ""}
-      </h2>
+      {amount && (
+        <h2 className="ml-2">
+          Output: {output !== null ? `${output} ${to}` : ""}
+        </h2>
+      )}
     </div>
   );
 };
