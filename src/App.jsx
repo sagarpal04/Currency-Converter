@@ -20,7 +20,7 @@ const App = () => {
     }
 
     if (from === to || !amount) {
-      setOutput(null);
+      setOutput(from);
       return;
     }
     converter();
@@ -58,7 +58,7 @@ const App = () => {
         </select>
       </div>
       <h2 className="ml-2">
-        Output: {output !== null ? `${output} ${to}` : "Invalid Conversion"}
+        Output: {output !== null ? `${output} ${to}` : ""}
       </h2>
     </div>
   );
